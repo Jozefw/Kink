@@ -1,0 +1,52 @@
+{% extends "layout.njk" %}
+
+{% block nav %}
+<div class="nav-wrapper">
+<ul class="nav-wrapper_nav-list">
+  <li class="nav-wrapper_nav-list-item"><a href="#home">Home</a></li>
+  <li class=nav-wrapper_nav-list-item><a href="#news">News</a></li>
+  <li class=nav-wrapper_nav-list-item><a href="#contact">Contact</a></li>
+  <li class=nav-wrapper_nav-list-item><a href="#about">About</a></li>
+</ul>
+<div class="nav-wrapper_image__wrapper">
+
+<img src="./assets/logo.png">
+</div>
+</div>
+{% endblock %}
+
+{% block top %}
+<div class="top-wrapper">
+
+<div class="top-wrapper__right">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="top-wrapper__left">
+<img class="top-wrapper__left-img" src="./assets/placeholder.png">
+</div>
+</div>
+{% endblock %}
+
+{% block bottom %}
+<div class="form-wrapper">
+
+<form action="/action_page.php">
+    <label for="userName">User Name</label>
+    <input type="text" id="userName" name="userName" placeholder="User Name">
+    <textarea id="textResponse" name="textResponse" rows="4" cols="50" placeholder="   Comments:"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  <div class="form-wrapper__list">
+    <ul class="form-wrapper__list-formList"> <h3 class="form-wrapper__list-formList-title">Previous Comments:</h3>
+        <li class="form-wrapper__list-formList-item">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li class="form-wrapper__list-formList-item"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li class="form-wrapper__list-formList-item">   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+    </ul>
+  </div>
+  </div>
+  
+{% endblock %}
+
+{% block footer %}
+<div class="footer">Copyright - All rights reserved. J. Woroniecki 2020</div>
+{% endblock %}

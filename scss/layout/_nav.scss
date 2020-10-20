@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Nav Section of the site/application.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.nav-wrapper{
+    background-color: $footer-bkcolor;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    &_image__wrapper{
+        padding: 10px;
+        img{
+
+        }
+        img:hover {
+            /* Start the shake animation and make the animation last for 0.5 seconds */
+            animation: shake 0.5s;
+          
+            /* When the animation is finished, start again */
+            animation-iteration-count: infinite;
+          }
+    }
+    &_nav-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        align-items: flex-end;
+        -webkit-align-items: flex-end;
+        -moz-align-items: flex-end;
+        
+
+        &-item{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            a{
+            color: $primary-text-color;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            font-size:2rem;
+            font-weight:900;
+            transition: color .5s;
+            }
+            a:hover{
+                color:$nav-font-color-hover;
+                transition: color .5s;
+            }
+        }
+    }
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
