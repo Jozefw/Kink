@@ -8,4 +8,5 @@ I would normally set up mixins for break points, but with the time allotment and
 
 ## I Pad Breakpoint - STET -
 Instructions were to use 768px as the break point, but at 768 on some older versions of I Pad this doesn't quite work, perhaps the cutt off could have been 767px?
+Actually, in retrospect,  I have a flex container set with max-width and inside that I set a min-width oquery on the sections , I think that changing the max-width query to min-width may have adjusted this.
 
